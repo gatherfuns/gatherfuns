@@ -2,7 +2,7 @@
 layout:       post
 title:        "Zambia"
 subtitle:     ""
-date:         2017-02-15 09:16:28
+date:         2017-02-15 09:16:2
 author:       "Albert"
 header-img:   "img/2017-02-15-Zambia/2017-02-15-Zambia-h.jpg"
 header-mask:  0.3
