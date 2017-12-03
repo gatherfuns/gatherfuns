@@ -1,11 +1,3 @@
----
-layout: page
-title: "About"
-description: "I'm Albert."
-header-img: "img/about-bg-walle.jpg"
-multilingual: true
----
-
 > **I'm Albert**
 
 
