@@ -1,7 +1,4 @@
-
-
 > **I'm Albert**
-
 
 **About me**
 
@@ -13,5 +10,4 @@ I’m a senior tourist, who loves life. I’d like to travel to anywhere. Almost
 **Disclaimer**
 
 These articles are all personal views, do not represent any position, if there is anything wrong, only for reference, do not imitate.
-
 
