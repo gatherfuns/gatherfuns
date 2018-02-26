@@ -9,3 +9,17 @@ header-img: "img/about-bg-walle.jpg"
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
+
+<div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <form action="?" method="POST">
+        <p>Login</p>
+        <input type="text" name="username" placeholder="username" />
+        <input type="text" name="password" placeholder="password"/>
+        <input type="submit" value="Submit">
+        <br />
+        <div class="g-recaptcha" data-sitekey="6LdlnEgUAAAAAA5QP3szUGNfenh4vxw8hOqjcc5T"></div>
+        <br/>
+      </form>
+
+</div>
