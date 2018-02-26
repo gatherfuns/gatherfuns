@@ -12,13 +12,20 @@ header-img: "img/about-bg-walle.jpg"
 
 <div>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        function recaptchaCallBack (response) {
+            alert(response);
+            $('#recaptcha_response').val(response);
+        }
+    </script>
     <form action="?" method="POST">
         <p>Login</p>
+        <input type="hidden" name="recaptcha_response" id="recaptcha_response" />
         <input type="text" name="username" placeholder="username" />
         <input type="text" name="password" placeholder="password"/>
         <input type="submit" value="Submit">
         <br />
-        <div class="g-recaptcha" data-sitekey="6LdlnEgUAAAAAA5QP3szUGNfenh4vxw8hOqjcc5T"></div>
+        <div class="g-recaptcha" data-sitekey="6LdlnEgUAAAAAA5QP3szUGNfenh4vxw8hOqjcc5T" data-callback="recaptchaCallBack"></div>
         <br/>
       </form>
 
