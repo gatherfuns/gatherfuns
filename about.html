@@ -11,13 +11,23 @@ header-img: "img/about-bg-walle.jpg"
 </div>
 
 <div>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
     <script>
         function recaptchaCallBack (response) {
             alert(response);
             $('#recaptcha_response').val(response);
         }
+
+        function validate(event) {
+            grecaptcha.execute();
+        }
+
+        function onload() {
+            var element = document.getElementById('google_recap');
+            element.onclick = validate;
+        }
     </script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <form action="?" method="POST">
         <p>Login</p>
         <input type="hidden" name="recaptcha_response" id="recaptcha_response" />
@@ -25,7 +35,7 @@ header-img: "img/about-bg-walle.jpg"
         <input type="text" name="password" placeholder="password"/>
         <input type="submit" value="Submit">
         <br />
-        <div class="g-recaptcha" data-sitekey="6LdlnEgUAAAAAA5QP3szUGNfenh4vxw8hOqjcc5T" data-callback="recaptchaCallBack" data-size="invisible"></div>
+        <div id="google_recap" class="g-recaptcha" data-sitekey="6LdlnEgUAAAAAA5QP3szUGNfenh4vxw8hOqjcc5T" data-callback="recaptchaCallBack" data-size="invisible"></div>
         <br/>
       </form>
 
