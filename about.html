@@ -18,13 +18,8 @@ header-img: "img/about-bg-walle.jpg"
             $('#recaptcha_response').val(response);
         }
 
-        function validate(event) {
-            grecaptcha.execute();
-        }
-
         function onload() {
-            var element = document.getElementById('google_recap');
-            element.onclick = validate;
+            grecaptcha.execute();
         }
     </script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
