@@ -14,12 +14,16 @@ header-img: "img/about-bg-walle.jpg"
     
     <script>
         function recaptchaCallBack (response) {
+            console.info('callback begin...');
             alert(response);
             $('#recaptcha_response').val(response);
+            console.info('callback end...');
         }
 
         function onload() {
+            console.info('begin...');
             grecaptcha.execute();
+            console.info('end...');
         }
     </script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
